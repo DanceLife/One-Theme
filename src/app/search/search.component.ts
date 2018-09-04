@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AppService } from '../app.service';
+import { SearchService } from './search.service';
 
 @Component({
   selector: 'app-search',
@@ -8,18 +8,32 @@ import { AppService } from '../app.service';
 })
 export class SearchComponent implements OnInit {
   queryString: string;
-  constructor(private appService: AppService) { }
+  searchResults: string; 
+
+  constructor(private searchService: SearchService) { }
 
   ngOnInit() {
-    this.queryString = this.appService.queryString;
-    this.appService.newQueryString
+    this.queryString = this.searchService.queryString;
+    this.searchService.newQueryString
     .subscribe(
       (queryString)=>{
         this.queryString = queryString;
         console.log("new query string: ", this.queryString);
-      }
-    )
+      });
+
+    console.log("on init query string: ", this.queryString);
     
+    this.searchResults = this.searchService.searchResults;
+    this.searchService.newSearchResults
+    .subscribe(
+      (newSearchResults)=>
+      {
+        this.searchResults = newSearchResults;
+      });
+    
+    
+
   }
+
 
 }

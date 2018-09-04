@@ -1,8 +1,12 @@
-<p *ngIf="queryString==' '">
-  Enter a keyword on the search box, then press the 'Search' button on the navigation bar above.
+<p *ngIf="!queryString.value && !searchResults">
+  What about entering something on the search box?
 </p>
 
-<p *ngIf="queryString">
-  Query string:  
-  {{ queryString.value}}
+<p *ngIf="queryString.value">
+  New entry (Hidden after implementation):  
 </p>
+<p> {{ queryString.value }} </p>
+<br />
+<p *ngIf="searchResults">After implementation search results to be showing below out of the previous entry: </p>
+<p>{{searchResults}}</p>
+
