@@ -24,10 +24,9 @@
     color: $darkBrown;
     text-decoration: none;
 }
-.navbar-brand{
-    
+.dropdown{
+    cursor: pointer;
 }
-
 .dropdown-menu {
     color: #212529;
     background-color: #f8f8f8;
@@ -55,9 +54,15 @@
         left:0%; 
     }
 }
-
 .form-inline{
     margin-top: 3px;
     margin-bottom: 3px;
     margin-right: 20px;
+}
+.form-control:focus {   
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $focusGreen4;
+}
+.btn-success:focus, .btn-success.focus {
+    box-shadow: 0 0 0 0.2rem $focusGreen4;
 }

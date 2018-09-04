@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-search',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
-
-  constructor() { }
+  queryString: string;
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
+    this.queryString = this.appService.queryString;
+    this.appService.newQueryString
+    .subscribe(
+      (queryString)=>{
+        this.queryString = queryString;
+        console.log("new query string: ", this.queryString);
+      }
+    )
+    
   }
 
 }

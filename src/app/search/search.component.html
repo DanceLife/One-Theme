@@ -1,3 +1,8 @@
-<p>
-  Pending implementation.
+<p *ngIf="queryString==' '">
+  Enter a keyword on the search box, then press the 'Search' button on the navigation bar above.
+</p>
+
+<p *ngIf="queryString">
+  Query string:  
+  {{ queryString.value}}
 </p>

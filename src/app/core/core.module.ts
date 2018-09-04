@@ -4,6 +4,7 @@ import { NavigationComponent } from "./navigation/navigation.component";
 import { BrandComponent } from './brand/brand.component';
 import { CoreRoutingModule } from "./core-routing.module";
 import { AppRoutingModule } from "../app-routing.module";
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -14,6 +15,7 @@ import { AppRoutingModule } from "../app-routing.module";
     imports: [
         AppRoutingModule,
         CoreRoutingModule,
+        ReactiveFormsModule
     ],
     exports: [
         NavigationComponent,

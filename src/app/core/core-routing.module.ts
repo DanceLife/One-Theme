@@ -12,7 +12,7 @@ const coreRoutes: Routes = [
 
 @NgModule({
  imports: [
-     RouterModule.forChild(coreRoutes)
+     RouterModule.forChild(coreRoutes),
  ],
  exports: [RouterModule]
 })

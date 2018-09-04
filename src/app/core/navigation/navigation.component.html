@@ -11,14 +11,14 @@
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" routerLink="/Home">Home</a></li>
         <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show"><a class="nav-link" routerLink="/Brand">About</a></li>
         <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
+                <a class="nav-link dropdown-toggle "  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Actions
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" routerLink="/Action">Action</a>
-                  <a class="dropdown-item" routerLink="/AnotherAction">Another action</a>
+                <div class="dropdown-menu" aria-labelledby="Actions">
+                  <a class="dropdown-item" routerLink="/Actions/Action">Action</a>
+                  <a class="dropdown-item" routerLink="/Actions/AnotherAction">Another action</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" routerLink="/SomethingElseHere">Something else here</a>
+                  <a class="dropdown-item" routerLink="/Actions/OneMoreAction">Something Else</a>
                 </div>
               </li>
 
@@ -26,9 +26,9 @@
     <ul class="navbar-nav navbar-right">
 
         <li> 
-            <form class="form-inline" (ngSubmit)="OnSearch()">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search site" aria-label="Search">
-                <button class="btn btn-success my-2 my-sm-0" type="button" (click)="OnSearch()">Search</button>
+            <form [formGroup]="searchForm" class="form-inline" (ngSubmit)="OnSearch()" >
+                <input class="form-control mr-sm-2" type="search" formControlName="queryString" placeholder="Search site" aria-label="Search">
+                <button class="btn btn-success my-2 my-sm-0" type="submit" >Search</button>
               </form>
             </li>
             <li class="nav-item dropdown">
