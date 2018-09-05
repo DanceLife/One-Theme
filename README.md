@@ -1,6 +1,8 @@
 # One-Navbar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+## See it live
+
+To see the project live [click here](https://dancelife.github.io/One-Navbar/).
 
 ## Run it locally
 
@@ -11,6 +13,3 @@ Go into a root folder of your choice and run the following lines
 `npm install` <br />
 `ng serve -o` <br />
 
-## See it live
-
-To see the project live [click here](https://dancelife.github.io/One-Navbar/).
