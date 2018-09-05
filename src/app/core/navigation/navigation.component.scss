@@ -8,13 +8,6 @@
     padding-top: 2px;
     padding-bottom: 2px;
 }
-.nav-link{
- height: 45px;
- padding-left: 15px;
-}
-.nav-link:hover{
-    background-color: #f2f4f6f5
-}
 #navbar-brand-img{
     width: 45px;
 }
@@ -25,6 +18,7 @@
 }
 .dropdown{
     cursor: pointer;
+    margin-left: -3%;
 }
 .dropdown-menu {
     color: #212529;
@@ -34,9 +28,6 @@
     position: absolute; 
     margin-top: 6px;
 }
-.navbar-right .dropdown-menu{
-    left:-60%; 
-}
 .dropdown-item {
     color:rgba(0, 0, 0, 0.5);
     height: 45px;
@@ -45,13 +36,43 @@
     padding-right: 1rem;
 }
 .dropdown-item:hover {
-   background-color:#f2f4f6f5;
    color: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 768px){
-    .navbar-right .dropdown-menu{
-        left:0%; 
+    button:focus {
+        background-color: rgba(226, 222, 222, 0.17);
+        border-color: rgba(183, 179, 179, 0.47);
+        outline: 5px auto rgba(99, 91, 91, 0.24);
     }
+    .dropdown-item:focus {
+            outline: 5px auto rgba(99, 91, 91, 0.24);
+            background-color: rgba(226, 222, 222, 0.17);
+    }
+
+
+}
+.nav-link{
+    height: 45px;
+    padding-left: 15px;
+
+   }
+@media (min-width: 768px){
+    .nav-link{
+        height: 55px;
+        vertical-align: middle;
+        display: table-cell;
+        margin-top: -5px;
+        margin-bottom: -5px;
+    }
+    .nav-link:hover{
+        background-color: #f2f4f6f5
+    }
+    .navbar-right .dropdown-menu{
+        margin-left: -50%;        
+    }
+    .dropdown-item:hover {
+        background-color:#f2f4f6f5;
+     }
 }
 .form-inline{
     margin-top: 3px;
@@ -65,8 +86,6 @@
 .btn-success:focus, .btn-success.focus {
     box-shadow: 0 0 0 0.2rem $boxShadowColor;
 }
-
-
 .one-form-control:focus {   
     outline: 0;
     box-shadow: 0 0 0 0.2rem $boxShadowColor;
@@ -79,7 +98,6 @@
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
 .one-btn-success:focus, .btn-success.focus {
     box-shadow: 0 0 0 0.2rem $boxShadowColor;
 }
@@ -98,4 +116,6 @@
     background-color: $oneBtnSuccessActiveBackgroundColor;
     border-color: $oneBtnSuccessActiveBorderColor;
 }
-
+.form-inline[_ngcontent-c1] {
+     margin-top: 8px;
+}

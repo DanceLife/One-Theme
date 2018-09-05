@@ -6,7 +6,7 @@ import { SignUpComponent } from '../auth/signup/signup.component';
 
 const coreRoutes: Routes = [
 { path: 'Home', component: HomeComponent },
-{ path: 'SignUp', component: SignUpComponent },
+{ path: 'Register/SignUp', component: SignUpComponent },
 { path: '', component: BrandComponent }
 ];
 

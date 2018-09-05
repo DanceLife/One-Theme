@@ -10,15 +10,17 @@ import { OneMoreActionComponent } from './actions/one-more-action/one-more-actio
 import { ActionsComponent } from './actions/actions.component';
 
 const appRoutes: Routes = [
+  {path: "Register", children:[
     {path: "Options",component: OptionsComponent},
-    {path: "Brand", component: BrandComponent},
-    {path: "Environment", component: EnvironmentComponent},
-    {path: "Search", component: SearchComponent},
-    {path: "Actions", component: ActionsComponent,children:[
-      {path: "Action", component: ActionComponent},
-      {path: "AnotherAction", component: AnotherActionComponent},
-      {path: ":OneMoreAction", component: OneMoreActionComponent}
-    ]},
+    {path: "Environment", component: EnvironmentComponent}
+  ]},
+  {path: "Search", component: SearchComponent},
+  {path: "About", component: BrandComponent},
+  {path: "Actions", component: ActionsComponent,children:[
+    {path: "Action", component: ActionComponent},
+    {path: "Another_Action", component: AnotherActionComponent},
+    {path: ":One_More_Action", component: OneMoreActionComponent}
+  ]},
   ];
 
 @NgModule({
