@@ -2,7 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
-## Development server
+## Run it locally
+
+Go into a root folder of your choice and run the following lines
+
+`git clone https://github.com/DanceLife/One-Navbar.git`
+`cd One-Navbar`
+`npm install`
+`ng serve -o`
+
+## See it live
+
+To see the project live [click here](https://dancelife.github.io/One-Navbar/).
+
+##See the[ live project here](https://dancelife.github.io/One-Navbar/).
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
