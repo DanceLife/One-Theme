@@ -1,11 +1,11 @@
-<p *ngIf="!queryString.value && !searchResults">
+<p *ngIf="!queryString && !searchResults">
   What about entering something on the search box?
 </p>
 
-<p *ngIf="queryString.value">
+<p *ngIf="queryString">
   New entry (Hidden after implementation):  
 </p>
-<p> {{ queryString.value }} </p>
+<p> {{ queryString }} </p>
 
 <p *ngIf="searchResults">Search results will be showing based on previous entry: </p>
 <p>{{searchResults}}</p>
