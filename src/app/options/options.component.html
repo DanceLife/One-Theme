@@ -1,3 +1,21 @@
-<p>
-  options works!
-</p>
+<div class="container">
+  <div style="text-align:left">
+    <h3 class="custom-color">
+      Themes
+    </h3>
+  </div>
+  <div class="card-deck" style="width: 15rem;">
+    <div class="card mb-4" >
+      <div class="card-header">Switch Themes</div>
+      <div class="card-block container">
+        <div class="btn-group" role="group" aria-label="Switch Style">
+          <button type="button" class="btn btn-primary" (click)="setTheme('base')">Base</button>
+          <button type="button" class="btn btn-secondary button-light" (click)="setTheme('light')">Light</button>
+          <button type="button" class="btn btn-secondary button-dark" (click)="setTheme('dark')">Dark</button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

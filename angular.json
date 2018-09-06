@@ -22,18 +22,34 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
+            "extractCss": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-            "src/scss/styles.scss",
-            "./node_modules/bootstrap/scss/bootstrap.scss"
+            "styles": [              
+            {
+              "input": "./node_modules/bootstrap/scss/bootstrap.scss",
+              "lazy": true,
+              "bundleName": "styles"
+            },
+            {
+              "input": "src/scss/dark.scss",
+              "lazy": true,
+              "bundleName": "assets/dark"
+            },
+            {
+              "input": "src/scss/light.scss",
+              "lazy": true,
+              "bundleName": "assets/light"
+            }
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/popper.js/dist/umd/popper.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./src/js/themeSwitcher.js"
+
             ]
           },
           "configurations": {
@@ -81,7 +97,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.scss"
+ 
             ],
             "scripts": [],
             "assets": [

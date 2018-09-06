@@ -1,0 +1,89 @@
+// Required
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+// Custom variables and mixins
+@import './variables';
+@import './mixins';
+
+// Optional
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/code";
+@import "node_modules/bootstrap/scss/grid";
+
+
+.navbar {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7!important;
+}
+#navbar-brand{
+    color: $darkBrown;
+}
+
+.dropdown-menu {
+    color: #212529;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7!important;
+}
+.dropdown-item {
+    color:rgba(0, 0, 0, 0.5);
+}
+.dropdown-item:hover {
+   color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 768px){
+    button:focus {
+        background-color: rgba(226, 222, 222, 0.17);
+        border-color: rgba(183, 179, 179, 0.47);
+        outline: 5px auto rgba(99, 91, 91, 0.24);
+    }
+    .dropdown-item:focus {
+            outline: 5px auto rgba(99, 91, 91, 0.24);
+            background-color: rgba(226, 222, 222, 0.17);
+    }
+}
+@media (min-width: 768px){
+    .nav-link:hover{
+        background-color: #f2f4f6f5
+    }
+    .dropdown-item:hover {
+        background-color:#f2f4f6f5;
+     }
+}
+.form-control:focus {   
+    box-shadow: 0 0 0 0.2rem $boxShadowColor;
+}
+.btn-success:focus, .btn-success.focus {
+    box-shadow: 0 0 0 0.2rem $boxShadowColor;
+}
+.one-form-control:focus {   
+    box-shadow: 0 0 0 0.2rem $boxShadowColor;
+    border-color: $boxBorderColor;
+}
+.testform-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.one-btn-success:focus, .btn-success.focus {
+    box-shadow: 0 0 0 0.2rem $boxShadowColor;
+}
+.one-btn-success {
+    color: $oneBtnSuccessColor;
+    background-color: $oneBtnSuccessBackgroundColor;
+    border-color: $oneBtnSuccessBorderColor;
+}
+.one-btn-success:hover {
+    color: #fff;
+    background-color: $oneBtnSuccessHoverBackgroundColor;
+    border-color: $oneBtnSuccessHoverBorderColor;
+}
+.one-btn-success:not(:disabled):not(.disabled):active, .one-btn-success:not(:disabled):not(.disabled).active, .show > .one-btn-success.dropdown-toggle {
+    color: #fff;
+    background-color: $oneBtnSuccessActiveBackgroundColor;
+    border-color: $oneBtnSuccessActiveBorderColor;
+}

@@ -12,4 +12,9 @@ export class OptionsComponent implements OnInit {
   ngOnInit() {
   }
 
+  setTheme(theme: string) {
+     window['switchTheme'](theme);
+    localStorage.setItem('One-Theme-Style', theme); // same key as in 'load-style.js'
+  }
+
 }
