@@ -28,11 +28,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.nav-link{
-    height: 45px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-   }
+
 @media (min-width: 768px){
     .nav-link{
         height: 55px;
@@ -71,3 +67,8 @@
 .form-inline[_ngcontent-c1] {
      margin-top: 8px;
 }
+.nav-link{
+    height: 45px;
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;
+   }
