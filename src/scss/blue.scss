@@ -1,14 +1,5 @@
 @import '~src/scss/base.scss';
-body{
-    background-color: #007bff73;
-    color: rgb(5, 5, 5);
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    color: rgb(14, 13, 13);
-}
-a{
-    color: #080808;
-}
+
 
 .NavbarLogoContainer img{
     visibility: hidden;
@@ -57,3 +48,17 @@ a{
     margin-right: auto;
 }
 
+body{
+    background-color: #96c7fb30;
+    color: rgb(5, 5, 5);
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: rgb(14, 13, 13);
+}
+a{
+    color: #080808;
+}
+.navbar {
+    background-color: #91ccef66!important;
+    border-color: #007bff4b!important;
+}
