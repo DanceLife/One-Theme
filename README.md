@@ -2,7 +2,7 @@
 
 ## See it live
 
-To see the project live [click here](https://dancelife.github.io/One-Navbar/).
+To see the project live [click here](https://dancelife.github.io/One-Theme/).
 
 ## Run it locally
 
