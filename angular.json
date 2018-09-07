@@ -34,14 +34,19 @@
               "bundleName": "styles"
             },
             {
-              "input": "src/scss/dark.scss",
-              "lazy": true,
-              "bundleName": "assets/dark"
-            },
-            {
               "input": "src/scss/light.scss",
               "lazy": true,
               "bundleName": "assets/light"
+            },
+            {
+              "input": "src/scss/blue.scss",
+              "lazy": true,
+              "bundleName": "assets/blue"
+            },
+            {
+              "input": "src/scss/dark.scss",
+              "lazy": true,
+              "bundleName": "assets/dark"
             }
             ],
             "scripts": [
