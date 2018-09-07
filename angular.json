@@ -47,7 +47,7 @@
               "input": "src/scss/dark.scss",
               "lazy": true,
               "bundleName": "assets/dark"
-            }
+            }            
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
