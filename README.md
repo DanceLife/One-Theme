@@ -2,7 +2,7 @@
 
 ## See it live
 
-To see the project live [click here](https://dancelife.github.io/One-Theme/).
+To see the project live [click here](https://dancelife.github.io/One-Theme/Register/Options/).
 
 ## Run it locally
 
