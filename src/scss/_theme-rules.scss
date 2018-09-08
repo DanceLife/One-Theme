@@ -75,6 +75,7 @@ a{
 }
 .one-search-btn:focus {
     background-color: $searchBtnBG-Focus;
+    color: $searchBtnBG-FocusFont;
 }
 .dropdown-menu {
     background-color: $ddBG;
