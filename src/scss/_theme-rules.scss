@@ -1,35 +1,28 @@
 .NavbarLogoContainer img{
     visibility: hidden;
 }
-
 .NavbarLogoContainer{
     background-image: url(
         $oneLogoSmall
     ); 
     background-repeat: no-repeat;
     background-size: 45px;
-
     height: 45px;
 }
-
 .OneLogoContainer img{
     display: none;
 }
-
 .OneLogoContainer{
     background-image: url(
         $oneLogoLarge
     ); 
 }
-
 .NavbarLogoContainer {    
     color: $navbarProjectName;
 }
-
 .GitHubLogoContainer img{
     display: none;
 }
-
 .GitHubLogoContainer{
     background-image: url(
         $gitHubLogo
@@ -41,7 +34,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
 body{
     background-color: $bodyBG;
     color: $bodyFont
@@ -59,14 +51,15 @@ a{
 .card-header{
     color:$cardHeaderFont;
 }
-
 .nav-link, .dropdown-item{
     color:$navLinkFont!important;
+}
+.card{
+    background-color: $cardContainerBG;
 }
 .card-block.container{
     background-color: $cardContainer;
 }
-
 .one-search-btn {
     background-color: $searchBtnBG;
     color: $searchBtnFont;
@@ -77,23 +70,12 @@ a{
     color: $searchBtnFont-Hover;
     border-color: $searchBtnBG-Hover;
 }
-
 .one-search-btn:focus,.one-search-box:focus  {
     box-shadow: 0 0 0 0.2rem $navbarBorder;
 }
 .one-search-btn:focus {
     background-color: $searchBtnBG-Focus;
 }
-
-@media (min-width: 768px){
-    .nav-link:hover{
-        background-color: $navItemHover;
-    }
-    .dropdown-item:hover {
-        background-color:$navItemHover
-     }
-}
-
 .dropdown-menu {
     background-color: $ddBG;
     border-color: $navbarBorder
@@ -101,7 +83,12 @@ a{
 .dropdown-divider{
     border-color:$navbarBorder;
 }
-
 .form-control{
 transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.nav-link:hover{
+    background-color: $navItemHover;
+}
+.dropdown-item:hover {
+    background-color:$navItemHover
+ }
