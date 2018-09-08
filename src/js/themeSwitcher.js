@@ -11,5 +11,10 @@ function switchTheme(currentTheme){
         }
     }
 }
-let currentTheme = localStorage.getItem('One-Theme-Style'); 
+// let defaultTheme = "light";
+let currentTheme = localStorage.getItem('One-Theme-Style') 
+    // if(!currentTheme){
+    //     currentTheme = defaultTheme;
+    //     alert("Current theme reset to default: " + defaultTheme);
+    // } 
 switchTheme(currentTheme);

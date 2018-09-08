@@ -50,9 +50,7 @@
     outline: 0;
     box-shadow: 0 0 0 0.2rem $boxShadowColor;
 }
-.btn-success:focus, .btn-success.focus {
-    box-shadow: 0 0 0 0.2rem $boxShadowColor;
-}
+
 .one-form-control:focus {   
     outline: 0;
     box-shadow: 0 0 0 0.2rem $boxShadowColor;
@@ -61,9 +59,7 @@
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-.one-btn-success:focus, .btn-success.focus {
-    box-shadow: 0 0 0 0.2rem $boxShadowColor;
-}
+
 .form-inline[_ngcontent-c1] {
      margin-top: 8px;
 }

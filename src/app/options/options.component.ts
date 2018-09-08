@@ -16,5 +16,9 @@ export class OptionsComponent implements OnInit {
      window['switchTheme'](theme);
     localStorage.setItem('One-Theme-Style', theme); // same key as in 'load-style.js'
   }
+  resetTheme(){
+    localStorage.removeItem('One-Theme-Style');
+    window['switchTheme'](null);
+  }
 
 }
