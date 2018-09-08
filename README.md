@@ -1,4 +1,4 @@
-# One-Navbar
+# One-Theme
 
 ## See it live
 
